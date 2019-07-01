@@ -36,7 +36,7 @@
 
     ./gfw-pac.py -i gfwlist.txt \
                  -f gfw.pac \
-                 -p "PROXY 192.168.1.200:3128; DIRECT" \
+                 -p "SOCKS5 127.0.0.1:1081; SOCKS 127.0.0.1:1081; DIRECT;" \
                  --user-rule=custom-domains.txt \
                  --direct-rule=direct-domains.txt \
                  --localtld-rule=local-tlds.txt \
